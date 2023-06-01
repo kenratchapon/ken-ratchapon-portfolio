@@ -16,16 +16,62 @@
   }
 }
 
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotation{
+  0%  { --gradient-angle: 0deg; }
+  100%  { --gradient-angle: 360deg; }
+}
+:root{
+  --clr-1: #30A2FF;
+  --clr-2: #00C4FF;
+  --clr-3: #FFE7A0;
+  --clr-4: #FFF5B8;
+  --clr-5: #FDCEDF;
+}
+
 .content-div{
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%, 100%;
   background-position: center;
-  height: 250px;
+  height: 230px;
 }
 .content-div:hover{
   background-image: linear-gradient(
       to right,
-      rgba(112, 157, 255,0.8),
-      hsla(242, 74%, 61% ,0.8)
+      rgb(255, 255, 255),
+      hsla(0, 0%, 100%, 0.8)
   )!important;
+}
+
+.card{
+  height: 30vh;
+  width: 30vh;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+}
+.card::before,
+.card::after{
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  z-index: 0;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-1)
+  );
+  border-radius: inherit;
+  animation: rotation 5s linear infinite;
+}
+.card::after{
+  filter: blur(3.5rem);
 }

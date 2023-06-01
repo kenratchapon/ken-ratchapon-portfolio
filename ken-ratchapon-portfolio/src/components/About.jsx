@@ -1,8 +1,10 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 
 export const About = () => {
     return (
-        <div name='about' className='w-full h-screen bg-[#3b3199] text-gray-300'>
+        <div name='about' className='w-full h-screen bg-gradient-to-b from-[#04293A] to-[#064663] text-gray-300'>
+            <Fade top>
             <div className='flex flex-col justify-center items-center w-full h-full'>
                 <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
                     <div className='sm:text-right pb-8'>
@@ -30,6 +32,7 @@ export const About = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

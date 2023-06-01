@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import {FaBars, FaTimes,FaGithub} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {Link} from 'react-scroll'
+import Resume from '../assets/resume/resume_620510660.pdf'
 const logo = '<KenRatchapon />'
+
 
 const Navbar = () => {
     const [nav,setNav] = useState(false)
@@ -10,18 +13,38 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'> 
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#041C32] text-[#ECB365] z-10'> 
 
             <div>
                 <h1 className='font-bold text-3xl font-[Satisfy] text-[#ebebeb]'>{logo}</h1>
             </div>
 
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="home" spy={true} smooth={true} duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="about" spy={true} smooth={true} duration={500}>
+                        About
+                    </Link>
+                </li>
+                <li>
+                    <Link to="skills" spy={true} smooth={true} duration={500}>
+                        Skills
+                    </Link>
+                </li>
+                <li>
+                    <Link to="work" spy={true} smooth={true} duration={500}>
+                        Work
+                    </Link>
+                </li>
+                <li>
+                    <Link to="contact" spy={true} smooth={true} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
 
@@ -32,11 +55,31 @@ const Navbar = () => {
             </div>
             {/* Mobile menu */}
             <ul className={!nav ? 'hidden':'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Work</li>
-                <li className='py-6 text-4xl'>Contact</li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="home" spy={true} smooth={true} duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="about" spy={true} smooth={true} duration={500}>
+                        About
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="skills" spy={true} smooth={true} duration={500}>
+                        Skills
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="work" spy={true} smooth={true} duration={500}>
+                        Work
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="contact" spy={true} smooth={true} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Social icons */}
@@ -50,15 +93,15 @@ const Navbar = () => {
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#06b39f] rounded-r-lg'>
                         <a className='flex justify-between items-center w-full text-gray-200' 
-                        href="https://github.com/kenratchapon">
+                        href={Resume} download="resume.pdf">
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#eeb805] rounded-r-lg'>
-                        <a className='flex justify-between items-center w-full text-gray-200' 
-                        href="https://github.com/kenratchapon">
-                            Email <HiOutlineMail size={30}/>
-                        </a>
+                        <Link className='flex justify-between items-center w-full text-gray-200' to="contact" spy={true} smooth={true} duration={500}>
+                            Contact
+                            <HiOutlineMail size={30}/>
+                        </Link> 
                     </li>
                 </ul>
             </div>
