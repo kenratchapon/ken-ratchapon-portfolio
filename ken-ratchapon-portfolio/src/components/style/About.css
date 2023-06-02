@@ -1,0 +1,30 @@
+/* wave2 section */
+.wave2 {
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    background: #6441a5;
+    bottom: 0;
+  }
+  
+  .wave2::before, .wave2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave2::before {
+    width: 55%;
+    height: 109%;
+    background-color: #064663;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave2::after {
+    width: 55%;
+    height: 100%;
+    background-color: #6441a5;
+    left: -1.5%;
+    top: 40%;
+  }
