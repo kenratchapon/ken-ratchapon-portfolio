@@ -19,7 +19,7 @@ const Contact = () => {
                             E-mail: ratchapon.pk@outlook.com
                             <HiOutlineMail className='max-[768px]:hidden' size={30}/>
                         </div>
-                        <div className='text-[#000000] text-center text-lg md:flex justify-between border-black border-2 px-6 py-3 my-2 rounded-lg hover:p-10 hover:text-xl duration-300'>
+                        <div className='text-[#000000] text-center text-xs md:text-lg md:flex justify-between border-black border-2 px-6 py-3 my-2 rounded-lg hover:p-10 hover:text-xl duration-300'>
                             Tel: 098-589-6210
                             <BiPhoneCall className='max-[768px]:hidden' size={30}/>
                         </div>
