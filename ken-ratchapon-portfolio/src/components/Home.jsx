@@ -16,9 +16,11 @@ const Home = () => {
                         <h1 className='text-4xl sm:text-7xl font-bold text-[#ffffff]'>Ken Ratchapon</h1>
                         <h2 className='text-4xl sm:text-7xl font-bold text-[#bfbfbf]'>I'm Front-End Developer</h2>
                         <p className='text-[#de7dff] py-4 max-w-[800px]'>
-                            Ratchapon Pukkham (Ken) - Recent Computer Science graduate specializing in frontend development. <br/>
-                            Experienced in a reputable software house for six months. Strong in HTML, CSS, JavaScript, and React. <br/>
-                            Focus on intuitive user experiences and clean design. Portfolio showcases innovative solutions. Available for collaboration.</p>
+                            Hi, I'm Ratchapon Pukkham, but you can call me Ken. I am a passionate and dedicated <br/> 
+                            frontend developer, striving to create visually appealing and user-friendly websites.<br/>
+                             This is my portfolio, where I showcase my skills, experience, and projects.
+                        </p>
+
                         <div>
                             <Link to="about" spy={true} smooth={true} duration={500}>
                                 <button className='text-[#ffffff] border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-pink-300 hover:border-pink-300 group hover:pr-10 duration-300'>

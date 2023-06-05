@@ -1,5 +1,4 @@
 import React from 'react'
-import ImgWork from '../assets/projects/workImg.jpeg'
 import app1 from '../assets/projects/app1.png'
 import app2 from '../assets/projects/app2.jpg'
 import app3 from '../assets/projects/app3.png'
@@ -8,14 +7,17 @@ import app5 from '../assets/projects/app5.png'
 import app6 from '../assets/projects/app6.png'
 import './style/Work.css'
 import Fade from 'react-reveal/Fade';
+import ProjectReport from '../assets/project/ProjectReport.pdf'
+import Poster from '../assets/project/Poster.pdf'
+import CertificateAward from '../assets/project/CertificateAward.pdf'
 
 const Work = () => {
     return (
         <div name='work' className='w-full md:h-screen bg-[#02838c] to-90% text-gray-200 relative'>
             <div className='max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full'>
                 <div className='pb-4'>
-                    <p className='text-4xl font-bold inline border-b-4'>Work</p>
-                    <p className='pt-4'>//check out some of my recent work</p>
+                    <p className='text-4xl font-bold inline border-b-4'>Projects</p>
+                    <p className='pt-4'>check out some of my recent projects</p>
                 </div>
 
                 {/* container */}
@@ -30,13 +32,13 @@ const Work = () => {
                                 Manao Meals Web Application
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="/">
+                                <a href={ProjectReport} download="ProjectReport.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Project Report</button>
                                 </a>
-                                <a href="/">
+                                <a href={Poster} download="Poster.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Poster</button>
                                 </a>
-                                <a href="/">
+                                <a href={CertificateAward} download="CertificateAward.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Certificate Award</button>
                                 </a>
                             </div>
@@ -49,13 +51,10 @@ const Work = () => {
                         {/* hover effect */}
                         <div className='opacity-0 group-hover:opacity-100 duration-300'>
                             <span className='text-2xl font-bold text-black tracking-wider flex justify-center text-center'>
-                                TodoList with Firebase
+                                Portfolio KenRatchapon
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="/">
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Demo</button>
-                                </a>
-                                <a href="/">
+                                <a href="https://github.com/kenratchapon/ken-ratchapon-portfolio.git">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Code</button>
                                 </a>
                             </div>
@@ -92,10 +91,10 @@ const Work = () => {
                                 TodoList with Firebase
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="/">
+                                <a href="https://todolist-app-with-firebase.web.app/">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Demo</button>
                                 </a>
-                                <a href="/">
+                                <a href="https://github.com/kenratchapon/react-todo-list-app-with-firebase.git">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Code</button>
                                 </a>
                             </div>
@@ -109,13 +108,13 @@ const Work = () => {
                         {/* hover effect */}
                         <div className='opacity-0 group-hover:opacity-100 duration-300'>
                             <span className='text-2xl font-bold text-black tracking-wider flex justify-center text-center'>
-                                Tia Maze Game in Python Genetic algo
+                                Crazy Traffic
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="/">
+                                <a href="https://youtu.be/ga_Ut23noh0">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Demo</button>
                                 </a>
-                                <a href="/">
+                                <a href="https://github.com/panutTea/Crazy-Traffic.git">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Code</button>
                                 </a>
                             </div>
@@ -132,10 +131,10 @@ const Work = () => {
                                 Tia Run Game in Java OOP
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="/">
+                                <a href="https://youtu.be/a3h4-YJGoto">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Demo</button>
                                 </a>
-                                <a href="/">
+                                <a href="https://github.com/kenratchapon/TiaRun-Game-in-Java-OOP">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Code</button>
                                 </a>
                             </div>

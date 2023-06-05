@@ -38,7 +38,7 @@ const Navbar = () => {
                 </li>
                 <li className='hover:text-[white] hover:text-2xl duration-200'>
                     <Link to="work" spy={true} smooth={true} duration={500}>
-                        Work
+                        Projects
                     </Link>
                 </li>
                 <li className='hover:text-[white] hover:text-2xl duration-200'>
