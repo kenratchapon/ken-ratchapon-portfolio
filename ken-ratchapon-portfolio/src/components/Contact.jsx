@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BiPhoneCall,BiMailSend} from 'react-icons/bi'
 const Contact = () => {
+    const [name, setName] =useState('')
+    const [email, setEmail] =useState('')
+    const [message, setMessage] =useState('')
+    const [status,setStatus] = useState(false);
+    useEffect(()=>{
+        if(name==='' || email==='' || message===''){
+            setStatus(true)
+        }else{
+            setStatus(false)
+        }
+    },[name,email,message])
     return (
         <div name='contact' className='w-full h-screen bg-[#ffe494] text-black flex flex-col justify-center relative'>
             <div className='max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full'>
@@ -27,10 +38,10 @@ const Contact = () => {
                     <div>
                         <form method='POST' action='https://getform.io/f/865f4b0f-af0b-43d8-a251-113eb981f8ff' className=' w-full mx-auto flex flex-col'>
                             <div className='flex flex-col gap-4'>
-                                <input className='p-2'  type='text' name='name' placeholder='name'/>
-                                <input className='p-2'  type='email' name='email' placeholder='Email'/>
-                                <textarea className='p-2' name='message' rows={10} placeholder='Message'/>
-                                <button className='border-2 border-black text-lg flex justify-between rounded-lg px-4 py-3 mx-auto hover:p-8 hover:text-xl duration-300'>Send <BiMailSend className='max-[768px]:hidden' size={24}/></button>
+                                <input value={name} onChange={(e)=>setName(e.target.value)} className='p-2'  type='text' name='name' placeholder='name'/>
+                                <input value={email} onChange={(e)=>setEmail(e.target.value)} className='p-2'  type='email' name='email' placeholder='Email'/>
+                                <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className='p-2' name='message' rows={10} placeholder='Message'/>
+                                <button disabled={status} className={status === true ? 'border-2 text-gray-400 border-gray-400 text-lg flex justify-between rounded-lg px-4 py-3 mx-auto' : 'border-2 border-black text-lg flex justify-between rounded-lg px-4 py-3 mx-auto hover:p-8 hover:text-xl duration-300'}>Send <BiMailSend className='max-[768px]:hidden' size={24}/></button>
                             </div>
                         </form>
                     </div>
