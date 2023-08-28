@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import Mypic from '../assets/mypic.png'
 import './style/About.css'
-const textAboutMe = `I am Ratchapon Pukkham, also known as Ken, a recent Computer Science graduate from Chiang Mai University. 
+const textAboutMe = `My name is Ratchapon Pukkham, also known as Ken, a recent Computer Science graduate from Chiang Mai University. 
                     With a passion for frontend development, I have experience in a software house through a six-month cooperative education program. 
                     I have a strong foundation in HTML, CSS, and JavaScript, along with expertise in frontend frameworks like React. 
                     I strive for intuitive user experiences and continuously stay updated with the latest industry trends. 

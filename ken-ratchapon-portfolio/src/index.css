@@ -32,6 +32,9 @@
   --clr-4: #FFF5B8;
   --clr-5: #FDCEDF;
 }
+body{
+  overflow-x: hidden;
+}
 
 .content-div{
   background-repeat: no-repeat;

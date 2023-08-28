@@ -32,13 +32,13 @@ const Work = () => {
                                 Manao Meals Web Application
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href={ProjectReport} download="ProjectReport.pdf">
+                                <a href={ProjectReport} download="Ratchapon_ProjectReport.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Project Report</button>
                                 </a>
-                                <a href={Poster} download="Poster.pdf">
+                                <a href={Poster} download="Ratchapon_Poster.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Poster</button>
                                 </a>
-                                <a href={CertificateAward} download="CertificateAward.pdf">
+                                <a href={CertificateAward} download="Ratchapon_CertificateAward.pdf">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-[#3c0b6a] font-bold text-lg'>Certificate Award</button>
                                 </a>
                             </div>
@@ -143,7 +143,7 @@ const Work = () => {
                     </Fade>
                 </div>
             </div>
-            <div className='wave4 z-10 max-[768px]:hidden'></div>
+            <div className='w-full wave4 z-10 max-[768px]:hidden'></div>
         </div>
     )
 }
