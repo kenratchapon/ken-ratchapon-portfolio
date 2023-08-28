@@ -4,7 +4,6 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
 import Resume from '../assets/resume/resume_620510660.pdf'
-import { Fade } from 'react-reveal'
 const logo = '<KenRatchapon />'
 
 
@@ -55,7 +54,6 @@ const Navbar = () => {
                 {!nav ? <FaBars/>:<FaTimes/>}
             </div>
             {/* Mobile menu */}
-            <Fade right>
             <ul className={!nav ? 'hidden':'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
                 <li className='py-6 text-3xl hover:text-[white] hover:text-5xl duration-200'>
                     <Link onClick={handleClick} to="home" spy={true} smooth={true} duration={500}>
@@ -83,7 +81,6 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-            </Fade>
             {/* Social icons */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>

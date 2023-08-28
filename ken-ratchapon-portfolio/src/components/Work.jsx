@@ -6,7 +6,6 @@ import app4 from '../assets/projects/app4.png'
 import app5 from '../assets/projects/app5.png'
 import app6 from '../assets/projects/app6.png'
 import './style/Work.css'
-import Fade from 'react-reveal/Fade';
 import ProjectReport from '../assets/project/ProjectReport.pdf'
 import Poster from '../assets/project/Poster.pdf'
 import CertificateAward from '../assets/project/CertificateAward.pdf'
@@ -22,7 +21,6 @@ const Work = () => {
 
                 {/* container */}
                 <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-4'>
-                    <Fade left>
                     {/* grid item 1*/}
                     <div style={{backgroundImage:`url(${app1})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div col-span-3'>
                         {/* hover effect */}
@@ -44,8 +42,6 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
-                    <Fade right>
                     {/* grid item 2*/}
                     <div style={{backgroundImage:`url(${app2})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div col-span-1'>
                         {/* hover effect */}
@@ -60,9 +56,6 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
-
-                    <Fade left>
                     {/* grid item 3*/}
                     <div style={{backgroundImage:`url(${app3})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div col-span-2'>
                         {/* hover effect */}
@@ -80,9 +73,7 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
 
-                    <Fade right>
                     {/* grid item 4*/}
                     <div style={{backgroundImage:`url(${app4})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div col-span-2'>
                         {/* hover effect */}
@@ -100,9 +91,7 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
 
-                    <Fade left>
                     {/* grid item 5*/}
                     <div style={{backgroundImage:`url(${app5})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div'>
                         {/* hover effect */}
@@ -120,9 +109,7 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
 
-                    <Fade right>
                     {/* grid item 6*/}
                     <div style={{backgroundImage:`url(${app6})`}} className='shadow-lg shadow-[black] group container rounded-lg flex justify-center items-center mx-auto content-div col-span-3'>
                         {/* hover effect */}
@@ -140,7 +127,6 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                    </Fade>
                 </div>
             </div>
             <div className='w-full wave4 z-10 max-[768px]:hidden'></div>

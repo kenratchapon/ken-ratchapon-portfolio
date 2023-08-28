@@ -1,6 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
-import Jump from 'react-reveal/Jump';
 import Mypic from '../assets/mypic.png'
 import './style/About.css'
 const textAboutMe = `My name is Ratchapon Pukkham, also known as Ken, a recent Computer Science graduate from Chiang Mai University. 
@@ -13,7 +11,6 @@ export const About = () => {
     return (
         <div name='about' className='w-full h-screen bg-[#6441a5] text-gray-300 relative'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
-                <Fade right>
                     <div>
                         <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
                             <div className='sm:text-right pb-8'>
@@ -33,10 +30,10 @@ export const About = () => {
                         </div>
                         
                     </div>
-                </Fade>
-                <Jump>
+
+
                     <img className='max-w-sm max-[768px]:hidden m-4' src={Mypic} alt="mypic" />
-                </Jump>
+
             
             </div>
             <div className='wave2 z-10 max-[768px]:hidden'></div>
