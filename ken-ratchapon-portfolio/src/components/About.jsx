@@ -1,6 +1,6 @@
 import React from 'react'
 import Mypic from '../assets/mypic.png'
-import './style/About.css'
+
 const textAboutMe = `My name is Ratchapon Pukkham, also known as Ken, a recent Computer Science graduate from Chiang Mai University. 
                     With a passion for frontend development, I have experience in a software house through a six-month cooperative education program. 
                     I have a strong foundation in HTML, CSS, and JavaScript, along with expertise in frontend frameworks like React. 
@@ -9,12 +9,14 @@ const textAboutMe = `My name is Ratchapon Pukkham, also known as Ken, a recent C
 
 export const About = () => {
     return (
-        <div name='about' className='w-full h-screen bg-[#6441a5] text-gray-300 relative'>
+        <div name='about' className='w-full h-screen bg-gray-50 text-black relative bg-opacity-75'>
+            <div className="bg-[#ffc2fa] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
+            <div className="bg-[#1cffe8] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
             <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div>
                         <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
                             <div className='sm:text-right pb-8'>
-                                <p className='text-4xl font-bold inline border-b-4'>About me</p>
+                                <p className='text-4xl font-bold inline border-b-4 border-purple-700'>About me</p>
                             </div>
                             <div>
                                 <p></p>
@@ -36,7 +38,6 @@ export const About = () => {
 
             
             </div>
-            <div className='wave2 z-10 max-[768px]:hidden'></div>
         </div>
     )
 }

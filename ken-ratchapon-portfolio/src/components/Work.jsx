@@ -5,14 +5,13 @@ import app3 from '../assets/projects/app3.png'
 import app4 from '../assets/projects/app4.png'
 import app5 from '../assets/projects/app5.png'
 import app6 from '../assets/projects/app6.png'
-import './style/Work.css'
 import ProjectReport from '../assets/project/ProjectReport.pdf'
 import Poster from '../assets/project/Poster.pdf'
 import CertificateAward from '../assets/project/CertificateAward.pdf'
 
 const Work = () => {
     return (
-        <div name='work' className='w-full md:h-screen bg-[#02838c] to-90% text-gray-200 relative'>
+        <div name='work' className='w-full md:h-screen bg-white to-90% text-black relative'>
             <div className='max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full'>
                 <div className='pb-4'>
                     <p className='text-4xl font-bold inline border-b-4'>Projects</p>
@@ -129,7 +128,6 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full wave4 z-10 max-[768px]:hidden'></div>
         </div>
     )
 }

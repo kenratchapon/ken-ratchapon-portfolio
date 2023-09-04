@@ -4,11 +4,11 @@
 
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Prompt:wght@300;400;500;600;700;800&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Quicksand:wght@300;400;500;600;700;800&family=Satisfy&family=Courgette&display=swap');
 
 @layer base{
   body{
-    @apply font-[Prompt];
+    @apply font-[Quicksand];
   }
   li{
     @apply px-4;
