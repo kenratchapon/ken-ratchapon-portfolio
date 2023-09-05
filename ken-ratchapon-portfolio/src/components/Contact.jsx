@@ -26,7 +26,7 @@ const Contact = () => {
                         Looking forward to hearing from you and creating something amazing together!
                     </p>
                 </div>
-                <div className='grid grid-cols-2 gap-4 px-4'>
+                <div className='sm:grid grid-cols-2 gap-4 px-4'>
                     <div>
                         <div className='text-[#000000] text-center text-xs md:text-lg md:flex justify-between border-black border-2 px-6 py-3 my-2 rounded-lg hover:p-10 hover:text-xl duration-300'>
                             E-mail: ratchapon.pk@outlook.com

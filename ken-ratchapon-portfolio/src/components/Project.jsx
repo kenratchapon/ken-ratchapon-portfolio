@@ -42,9 +42,11 @@ export default function Project(props) {
                                 <button className='text-center rounded-lg p-1 bg-white text-black hover:bg-black hover:text-white font-bold text-lg'>Code</button>
                             </a>
                         }
-                        <a href={`${props.visit}`}>
-                            <button className='text-center rounded-lg p-1 bg-white text-black hover:bg-black hover:text-white font-bold text-lg'>Visit</button>
-                        </a>
+                        {props.visit !== '' &&                         
+                            <a href={`${props.visit}`}>
+                                <button className='text-center rounded-lg p-1 bg-white text-black hover:bg-black hover:text-white font-bold text-lg'>Visit</button>
+                            </a>
+                        }
                     </div>
                 </div>
                 

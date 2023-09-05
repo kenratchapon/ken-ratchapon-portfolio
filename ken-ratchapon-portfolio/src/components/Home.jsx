@@ -3,7 +3,7 @@ import { HiArrowNarrowDown } from 'react-icons/hi'
 import {BiArrowToBottom} from 'react-icons/bi'
 import { Link } from 'react-scroll'
 import Logo from '../assets/logo.png'
-import Resume from '../assets/resume/Ratchapon_Resume.pdf'
+import Resume from '../assets/resume/Resume_Ratchapon.pdf'
 import { FaGithub } from 'react-icons/fa'
 
 const Home = () => {
@@ -14,18 +14,18 @@ const Home = () => {
                 <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center'>
                     <p className='text-[#de7dff]'>Hi, my name is</p>
                     <h1 className='text-4xl sm:text-7xl font-bold text-black'>Ken Ratchapon</h1>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-[#bfbfbf]'>I'm Front-End Developer</h2>
-                    <p className='text-[#de7dff] py-4 max-w-[800px]'>
+                    <h2 className='text-4xl sm:text-7xl font-bold text-[#d5d5d5]'>I'm Front-End Developer</h2>
+                    <p className='text-[#ffd341] py-4 max-w-[800px]'>
                         Hi, My name is Ratchapon Pukkham, but you can call me Ken. I am a passionate and dedicated <br />
                         frontend developer, striving to create visually appealing and user-friendly websites.<br />
-                        This is my portfolio, where I showcase my skills, experience, and projects.
+                        This is my portfolio, where I showcase my experience, skills, and projects.
                     </p>
 
                     <div className='flex flex-col sm:flex-row gap-4'>
                         <a href={Resume} download="Ratchapon_Resume.pdf">
                             <button className='text-black border-2 px-6 py-3 my-2 flex items-center rounded-3xl bg-white'>
                                 Download Resume
-                                <BiArrowToBottom/>
+                                <BiArrowToBottom className='ml-3'/>
                             </button>
                         </a>
                         <a href="https://github.com/kenratchapon">

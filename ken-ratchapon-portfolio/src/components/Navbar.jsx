@@ -3,7 +3,7 @@ import {FaBars, FaTimes,FaGithub} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from 'react-scroll'
-import Resume from '../assets/resume/Ratchapon_Resume.pdf'
+import Resume from '../assets/resume/Resume_Ratchapon.pdf'
 const logo = '<Ken/>'
 
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='hover:underline'>
-                    <Link to="work" spy={true} smooth={true} duration={500}>
+                    <Link to="project" spy={true} smooth={true} duration={500}>
                         Projects
                     </Link>
                 </li>
@@ -71,8 +71,8 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
-                    <Link onClick={handleClick} to="work" spy={true} smooth={true} duration={500}>
-                        Work
+                    <Link onClick={handleClick} to="project" spy={true} smooth={true} duration={500}>
+                        Projects
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
