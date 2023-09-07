@@ -14,10 +14,10 @@ const Home = () => {
                 <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center'>
                     <p className='text-[#de7dff]'>Hi, my name is</p>
                     <h1 className='text-4xl sm:text-7xl font-bold text-black'>Ken Ratchapon</h1>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-[#d5d5d5]'>I'm Front-End Developer</h2>
+                    <h2 className='text-4xl sm:text-7xl font-bold text-[#d5d5d5]'>I'm Web Developer</h2>
                     <p className='text-[#ffd341] py-4 max-w-[800px]'>
                         Hi, My name is Ratchapon Pukkham, but you can call me Ken. I am a passionate and dedicated <br />
-                        frontend developer, striving to create visually appealing and user-friendly websites.<br />
+                        web developer, striving to create visually appealing and user-friendly websites.<br />
                         This is my portfolio, where I showcase my experience, skills, and projects.
                     </p>
 

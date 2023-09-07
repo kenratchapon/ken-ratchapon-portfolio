@@ -9,7 +9,7 @@ import { experiencesData } from "../lib/data";
 
 const textAboutMe = `My name is Ratchapon Pukkham, also known as Ken, a recent Computer Science graduate from Chiang Mai University. 
                     With a passion for frontend development, I have experience in a software house through a six-month cooperative education program. 
-                    I have a strong foundation in HTML, CSS, and JavaScript, along with expertise in frontend frameworks like React. 
+                    I have a strong foundation in HTML, CSS, and JavaScript, along with expertise in frontend/full-stack frameworks. 
                     I strive for intuitive user experiences and continuously stay updated with the latest industry trends. 
                     Explore my portfolio website for examples of my work. Thank you for visiting!`
 
