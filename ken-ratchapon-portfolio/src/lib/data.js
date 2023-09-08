@@ -49,7 +49,7 @@ export const experiencesData = [
     date: "April 2022 - September 2022 (6 months)",
   },
   {
-    title: "Undergraduate",
+    title: "undergraduate student",
     location: "Chiang Mai University",
     description:
       "I began my undergraduate studies at Chiang Mai University in 2019, majoring in Computer Science. This program provided me with a strong academic foundation and introduced me to various aspects of computer science, including programming, algorithms, and data structures.",
